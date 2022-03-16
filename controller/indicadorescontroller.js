@@ -1,4 +1,4 @@
-const indicadoresEconomicosBCCR = require('../models/indicadores');
+const indicadoresEconomicosBCCR = require('../routes/indicadoresRouter');
 
 indicadoresEconomicosBCCR().then((data) => {
     console.log("Compra y Venta del día de hoy:");
