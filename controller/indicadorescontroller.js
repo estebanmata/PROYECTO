@@ -5,7 +5,7 @@ indicadoresEconomicosBCCR().then((data) => {
     console.log(data);
 });
 
-indicadoresEconomicosBCCR('15/03/2022', '31/12/2022').then((data) => {
+indicadoresEconomicosBCCR('20/04/2018', '20/04/2018').then((data) => {
     console.log("Compra y Venta por fecha:");
     console.log(data);
 });

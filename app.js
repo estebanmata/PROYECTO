@@ -13,7 +13,7 @@ const choferRoutes = require("./routes/choferRoutes");
 const solicitudVehiculoRoutes = require("./routes/solicitudVehiculoRoutes");
 const usuarioRoutes = require("./routes/usuarioRoutes");
 const vehiculoRoutes = require("./routes/vehiculoRoutes");
-const indicadoresRoutes = require("./routes/solicitudVehiculoRoutes");
+const indicadoresRoutes = require("./routes/indicadoresRouter");
 
 //Variable de entorno
 dotEnv.config();
@@ -50,6 +50,7 @@ app.use(
 app.use("/chofer/", choferRoutes);
 app.use("/solicitudVehiculo/", solicitudVehiculoRoutes);
 app.use("/usuario/", usuarioRoutes);
+app.use("/vehiculo/", vehiculoRoutes);
 app.use("/indicadores/", indicadoresRoutes);
 
 //Se inicia el servicio express para publicar los servicios rest

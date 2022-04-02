@@ -7,7 +7,6 @@ var DOMParser = require('xmldom').DOMParser;
 module.exports.default = indicadoresEconomicosBCCR;
 module.exports = indicadoresEconomicosBCCR;
 
-
 function indicadoresEconomicosBCCR(email, token, fechaInicio, fechaFinal) {
     try {
         var todayDate = new Date();
@@ -42,20 +41,3 @@ function indicadoresEconomicosBCCR(email, token, fechaInicio, fechaFinal) {
     }
 
 };
-
-
-const IndicadoresSchema = new Schema(
-    {
-        NUM_VALOR: Number,
-       tipoLicencia: String,
-       fechaNacimiento: String,
-       fechaVencimientoLicencia: String,
-       choferActual: String
-    },
-        {timestamps: true}// Fecha de creacion y modificacion
-);
-//Creacion del modelo que van a estar relacionado a la coleccion de Facturas
-const IndicadoresModel = model("Indicadores", IndicadoresSchema);
-
-//Hacemos visible el modelo con el module exports
-module.exports = IndicadoresModel;
